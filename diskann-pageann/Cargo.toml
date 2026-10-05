@@ -1,0 +1,18 @@
+[package]
+name = "diskann-pageann"
+version.workspace = true
+description = "PageANN: SSD page-packed graph search on top of DiskANN3 disk indexes"
+authors.workspace = true
+repository.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+serde = { workspace = true, features = ["derive"] }
+thiserror.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+
+[lints]
+workspace = true

@@ -685,6 +685,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "diskann-pageann"
+version = "0.59.0"
+dependencies = [
+ "proptest",
+ "serde",
+ "thiserror 2.0.17",
+]
+
+[[package]]
 name = "diskann-providers"
 version = "0.59.0"
 dependencies = [

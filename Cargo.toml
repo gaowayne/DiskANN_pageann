@@ -16,6 +16,7 @@ members = [
     # Providers
     "diskann-providers",
     "diskann-disk",
+    "diskann-pageann",
     "diskann-label-filter",
     "diskann-garnet",
     "diskann-inmem",
@@ -64,6 +65,7 @@ diskann = { path = "diskann", version = "0.59.0" }
 diskann-providers = { path = "diskann-providers", default-features = false, version = "0.59.0" }
 diskann-inmem = { path = "diskann-inmem", default-features = false, version = "0.59.0" }
 diskann-disk = { path = "diskann-disk", version = "0.59.0" }
+diskann-pageann = { path = "diskann-pageann", version = "0.59.0" }
 diskann-label-filter = { path = "diskann-label-filter", version = "0.59.0" }
 # Infra
 diskann-benchmark-runner = { path = "diskann-benchmark-runner", version = "0.59.0" }
