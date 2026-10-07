@@ -62,10 +62,10 @@ Depends on `diskann`, `diskann-disk`, `diskann-vector` — consume a built Vaman
 - Pack into pages with an explicit id map (`old_id → (page, slot)`)
 - Sequential + greedy-neighbor packers (`pack.rs`); on-disk 4 KiB image still later
 
-## Milestone 2
+## Milestone 2 (this change)
 
-- Page-graph beam search vs brute force on a toy set (≥256 pts when wired to DiskANN build)
-- Then SIFT 10K / 1M vs C++ PageANN Recall@10
+- In-memory page-graph beam search (`search.rs`) vs brute force on a toy kNN graph
+- Next: wire DiskANN Vamana build → pack → search; then SIFT 10K / 1M vs C++ PageANN Recall@10
 
 ## File / I/O notes from C++
 

@@ -5,7 +5,7 @@
 //! - [`PackStrategy::GreedyNeighbors`]: fill each page with a seed and its
 //!   still-unassigned Vamana neighbors (topology clustering, closer to PageANN).
 
-use crate::layout::{PageAnnLayout, PageId, PackedLocation, Slot};
+use crate::layout::{PageAnnLayout, PackedLocation};
 
 #[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub enum PackStrategy {
@@ -179,6 +179,7 @@ fn page_level_edges(pages: &[Vec<u32>], adjacency: &[Vec<u32>]) -> Vec<Vec<u32>>
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::layout::{PageId, Slot};
 
     fn ring(n: u32, degree: usize) -> Vec<Vec<u32>> {
         (0..n)
